@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import './About.css'; // Import the CSS file
+import Button from './Button'; // Import the Button component
 
 const About = () => {
     return (
@@ -10,10 +12,13 @@ const About = () => {
             transition={{ duration: 0.5 }}
         >
             <h1>About Me</h1>
-            <p>
-                Hi! I'm Ganesh, a developer with experience in web development, data visualization,
-                and AI/ML. I enjoy turning ideas into functional, user-friendly solutions.
-            </p>
+            <h1>⚠️Dev is Cooking..... Please Wait⚠️</h1>
+
+            <h2>Connect with Me</h2>
+            <div className="social-links">
+                <Button platform="LinkedIn" url="https://linkedin.com/in/yourusername" />
+                <Button platform="GitHub" url="https://github.com/yourusername" />
+            </div>
         </motion.div>
     );
 };

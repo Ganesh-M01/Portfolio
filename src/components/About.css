@@ -1,0 +1,35 @@
+.about-section {
+    font-size: 1.5rem; /* Base font size for paragraphs */
+    line-height: 1.6; /* Improved line spacing for readability */
+    color: #333; /* Dark grey text color for contrast */
+    padding: 20px; /* Add some padding around the section */
+    background-color: #f9f9f9; /* Light background color for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-section h1 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #007BFF; /* Blue color for the heading */
+}
+
+.about-section h2 {
+    font-size: 2rem; /* Adjust size for the subheading */
+    margin-top: 20px; /* Space above the subheading */
+}
+
+.social-links {
+    margin-top: 20px; /* Space above the social links */
+}
+
+.social-icon {
+    width: 40px; /* Adjust the size of the icons */
+    height: 40px; /* Adjust the size of the icons */
+    margin-right: 15px; /* Space between icons */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
