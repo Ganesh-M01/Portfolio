@@ -20,7 +20,7 @@ function App() {
             words={['Fullstack Developer', 'Data Analyst', 'Devops Engineer']}
             loop={4}
             cursor
-            cursorStyle=''
+            cursorStyle='_'
             typeSpeed={100}
             deleteSpeed={100}
             delaySpeed={2000}
