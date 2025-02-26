@@ -1,14 +1,21 @@
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const Button = () => {
+  const navigate = useNavigate();
+
+  const handleRedirect = (path: string) => {
+    navigate(path);
+  };
+
   return (
     <StyledWrapper>
       <div className="nav">
         <div className="container">
-          <div className="btn">Home</div>
-          <div className="btn">Contact</div>
-          <div className="btn">About</div>
-          <div className="btn">FAQ</div>
+          <div className="btn" onClick={() => handleRedirect('/')}>Home</div>
+          <div className="btn" onClick={() => handleRedirect('/projects')}>Projects</div>
+          <div className="btn" onClick={() => handleRedirect('/about')}>About</div>
+          <div className="btn" onClick={() => handleRedirect('/contact')}>Contact</div>
           <svg className="outline" overflow="visible" width={400} height={60} viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
             <rect className="rect" pathLength={100} x={0} y={0} width={400} height={60} fill="transparent" strokeWidth={5} />
           </svg>
