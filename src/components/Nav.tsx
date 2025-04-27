@@ -1,21 +1,23 @@
 import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom';
 
 const Button = () => {
-  const navigate = useNavigate();
-
-  const handleRedirect = (path: string) => {
-    navigate(path);
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('href')?.substring(1);
+    const targetElement = document.getElementById(targetId || '');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
     <StyledWrapper>
       <div className="nav">
         <div className="container">
-          <div className="btn" onClick={() => handleRedirect('/')}>Home</div>
-          <div className="btn" onClick={() => handleRedirect('/projects')}>Projects</div>
-          <div className="btn" onClick={() => handleRedirect('/about')}>About</div>
-          <div className="btn" onClick={() => handleRedirect('/contact')}>Contact</div>
+          <a className="btn" href="#home" onClick={handleSmoothScroll}>Home</a>
+          <a className="btn" href="#projects" onClick={handleSmoothScroll}>Projects</a>
+          <a className="btn" href="#about" onClick={handleSmoothScroll}>About</a>
+          <a className="btn" href="#contact" onClick={handleSmoothScroll}>Contact</a>
           <svg className="outline" overflow="visible" width={400} height={60} viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
             <rect className="rect" pathLength={100} x={0} y={0} width={400} height={60} fill="transparent" strokeWidth={5} />
           </svg>
@@ -23,7 +25,7 @@ const Button = () => {
       </div>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
   .outline {
@@ -40,23 +42,16 @@ const StyledWrapper = styled.div`
   }
 
   .nav {
-    position:absolute;
-    top:70px;
-    right:100px;
+    position: fixed;
+    top: 50px; /* Moved down */
+    right: 50px; /* Moved to the left */
     width: 400px;
     height: 60px;
-  }
-
-  .container:hover .outline .rect {
-    transition: 999999s;
-    /* Must specify these values here as something *different* just so that the transition works properly */
-    stroke-dashoffset: 1;
-    stroke-dasharray: 0;
+    z-index: 1000;
   }
 
   .container {
-    position: absolute;
-    inset: 0;
+    position: relative;
     background: transparent;
     display: flex;
     flex-direction: row;
@@ -68,6 +63,7 @@ const StyledWrapper = styled.div`
   .btn {
     padding: 0.5em 1.5em;
     color: #fff;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.1s;
   }
@@ -75,31 +71,6 @@ const StyledWrapper = styled.div`
   .btn:hover {
     background: #fff3;
   }
-
-  .btn:nth-child(1):hover ~ svg .rect {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 0 2 8 73.3 8 10.7;
-  }
-
-  .btn:nth-child(2):hover ~ svg .rect {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
-  }
-
-  .btn:nth-child(3):hover ~ svg .rect {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
-  }
-
-  .btn:nth-child(4):hover ~ svg .rect {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
-  }
-
-  .btn:hover ~ .outline .rect {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 0 0 10 40 10 40;
-    transition: 0.5s !important;
-  }`;
+`;
 
 export default Button;
