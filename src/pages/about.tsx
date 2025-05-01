@@ -6,7 +6,15 @@ const About = () => {
       <div className="card">
         <h1>About Me</h1>
         <p>
-          A passionate and quick-learning pre-final year B.Tech student in <span>Artificial Intelligence & Data Science</span> with a keen interest in problem-solving, automation, and data-driven solutions. Experienced in <span>Android development, DevOps, and cloud infrastructure</span> with a focus on optimizing systems for efficiency and scalability. Skilled in <span>Infrastructure as Code (IaC), Terraform, CI/CD pipelines (CircleCI, Jenkins), and Datadog monitoring</span>, aiming to contribute innovative and impactful solutions to the technology community.
+          A passionate and quick-learning pre-final year B.Tech student in <span>Artificial Intelligence & Data Science </span> 
+          with a strong focus on <span>full-stack development</span> and <span>AI model building</span>. 
+          I enjoy creating <span>end-to-end solutions</span> from <span>intuitive frontends</span> and  
+          <span> robust backends</span> to <span>intelligent systems</span> powered by <span>machine learning</span>. 
+          Experienced in building <span>web and mobile applications</span> and integrating <span>AI models</span> into real-world projects. 
+          Skilled in technologies like <span>React</span>, <span>Node.js</span>, <span>MongoDB</span> and <span>Python </span> 
+          with exposure to <span>TensorFlow</span>, <span>scikit-learn</span> and other ML tools. 
+          Constantly exploring new tools and best practices to deliver <span>scalable</span>, <span>efficient</span> and 
+          <span> impactful</span> solutions to the tech community.
         </p>
       </div>
     </AboutWrapper>
