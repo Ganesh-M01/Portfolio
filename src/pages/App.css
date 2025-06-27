@@ -46,3 +46,11 @@ body{
 h1{
   position:center;
 }
+
+#about {
+  margin-bottom: 30rem; /* Increased gap */
+}
+
+#projects {
+  margin-top: 30rem; /* Increased gap */
+}

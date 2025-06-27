@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from '../components/Nav';
-import FollowCursor from '../components/FlowCursor';
+//import FollowCursor from '../components/FlowCursor';
 import Home from './home';
 import About from './about';
 import Projects from './projects';
@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <div>
-        <FollowCursor />
         <Navbar />
         <div id="home">
           <Home />
