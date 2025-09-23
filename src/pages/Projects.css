@@ -225,3 +225,15 @@
     text-align: center;
     text-shadow: 0 2px 0 #000, 0 0 2px #33ac00;
   }
+
+  .project-bg {
+    opacity: 0.5;
+    transition: opacity 0.4s, z-index 0s 0.4s;
+    z-index: 0;
+}
+
+.box:hover .project-bg {
+  opacity: 1;
+  z-index: 3;
+  transition: opacity 0.4s, z-index 0s;
+}
