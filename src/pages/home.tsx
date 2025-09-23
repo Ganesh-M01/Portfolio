@@ -19,9 +19,21 @@ const Home = () => {
             />
           </span>
         </h2>
-        <StyledButton>
-          <a href="https://drive.google.com/file/d/1DeTwXjisv3B3zF6ahEWXfrjCFEL3sJZ3/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-            <button>RESUME</button>
+        <StyledButton><br/><br/>
+          <a
+            href="https://drive.google.com/file/d/1HU4ZMo2DhXrgiR-HnqtplNnZvTCtytRC/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Software Resume</button>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1znBfTC_NgAJRF8o6WR6I41mrowIHMDzG/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginLeft: '1.5rem' }}
+          >
+            <button>AI Resume</button>
           </a>
         </StyledButton>
       </div>

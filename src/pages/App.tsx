@@ -11,16 +11,16 @@ function App() {
     <>
       <div>
         <Navbar />
-        <div id="home">
+        <div id="home" style={{ minHeight: '100vh', paddingTop: '60px', paddingBottom: '60px' }}>
           <Home />
         </div>
-        <div id="about">
+        <div id="about" style={{ minHeight: '100vh', paddingTop: '60px', paddingBottom: '60px' }}>
           <About />
         </div>
-        <div id="projects">
+        <div id="projects" style={{ minHeight: '100vh', paddingTop: '60px', paddingBottom: '60px' }}>
           <Projects />
         </div>
-        <div id="contact">
+        <div id="contact" style={{ minHeight: '100vh', paddingTop: '60px', paddingBottom: '60px' }}>
           <Contact />
         </div>
       </div>

@@ -6,7 +6,7 @@ const About = () => {
       <div className="card">
         <h1>About Me</h1>
         <p>
-          A passionate and quick-learning pre-final year B.Tech student in <span>Artificial Intelligence & Data Science </span> 
+          A passionate and quick-learning final year B.Tech student in <span>Artificial Intelligence & Data Science </span> 
           with a strong focus on <span>full-stack development</span> and <span>AI model building</span>. 
           I enjoy creating <span>end-to-end solutions</span> from <span>intuitive frontends</span> and  
           <span> robust backends</span> to <span>intelligent systems</span> powered by <span>machine learning</span>. 
