@@ -1,6 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter';
 import styled from 'styled-components';
-import Beams from '../components/Beams';
+
 
 const Home = () => {
   return (
