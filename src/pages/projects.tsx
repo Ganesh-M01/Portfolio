@@ -90,7 +90,6 @@ const Projects = () => {
 							<p style={{ marginRight: '1em' }}>
 								<strong>{proj.type}</strong>
 								<br />
-								<hr />
 								{proj.short}
 							</p>
 							<div style={{ display: 'flex', alignItems: 'center', gap: '0.7em' }}>

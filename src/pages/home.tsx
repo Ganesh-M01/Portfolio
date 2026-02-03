@@ -1,5 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter';
 import styled from 'styled-components';
+import Beams from '../components/Beams';
 
 const Home = () => {
   return (
@@ -42,13 +43,25 @@ const Home = () => {
 };
 
 const HomeWrapper = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   text-align: center;
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
 
   .content {
+    position: relative;
+    z-index: 1;
+
     h1 {
       font-size: 3rem;
       color: #fff;
@@ -57,9 +70,9 @@ const HomeWrapper = styled.div`
 
     h2 {
       font-size: 1.5rem;
-      color: rgb(211, 255, 214); /* Green theme for the typewriter text */
+      color: rgb(211, 255, 214);
       font-weight: normal;
-      margin-left: 15px; /* Move slightly to the right */
+      margin-left: 15px;
 
       span {
         font-weight: bold;
@@ -82,7 +95,7 @@ const StyledButton = styled.div`
     border: none;
     background: none;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nippo', sans-serif;
     margin-top: 2rem;
     cursor: pointer;
   }

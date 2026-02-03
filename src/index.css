@@ -1,5 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Nippo, system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -28,7 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("../assets/Neon-Haze-Backgrounds.png");
+  /* background-image: url("../assets/Neon-Haze-Backgrounds.png"); */
   background-attachment: fixed; /* Makes the background image non-scrollable */
 }
 
@@ -43,7 +44,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: Nippo, system-ui, sans-serif;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
